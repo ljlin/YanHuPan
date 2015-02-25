@@ -1,51 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
     <title>NUAAPlus by ljlin</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/ljlin/NUAAPlus">View on GitHub</a>
-    <div class="shell">
-
+    <div class="wrapper">
       <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>NUAAPlus</h1>
-            <h2>Import NUAA student timetable on iOS</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
+        <h1>NUAAPlus</h1>
+        <p>Import NUAA student timetable on iOS</p>
+        <p class="view"><a href="https://github.com/ljlin/NUAAPlus">View the Project on GitHub <small>ljlin/NUAAPlus</small></a></p>
+        <ul>
+          <li><a href="https://github.com/ljlin/NUAAPlus/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ljlin/NUAAPlus/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ljlin/NUAAPlus">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/ljlin/NUAAPlus/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/ljlin/NUAAPlus/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+      <section>
         <h2>
 <a id="nuaa" class="anchor" href="#nuaa" aria-hidden="true"><span class="octicon octicon-link"></span></a>NUAA+</h2>
 
@@ -56,14 +37,6 @@
 <p>借由iCloud还可同步到OSX，无论是Mac还是iPhone都能随时在通知中心看到当天的课程安排。</p>
 
 <p>其他的功能还有教务通知，查询修读课程（方便申请免修课程的同学及时查询免修申请是否通过），查询考试安排和查询校历。</p>
-
-<h2>
-<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
-
-<p><img src="Screenshots/IMG_5191.PNG" alt="Image" title="Image">
-<img src="Screenshots/IMG_5192.PNG" alt="Image" title="Image">
-<img src="Screenshots/IMG_5193.PNG" alt="Image" title="Image">
-<img src="Screenshots/OSXScreenshot.png" alt="Image" title="Image"></p>
 
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
@@ -90,6 +63,7 @@
 <li><a href="https://github.com/afnetworking/afnetworking">AFNetworking</a></li>
 <li><a href="https://github.com/duemunk/Async">Async</a></li>
 <li><a href="https://github.com/robbiehanson/KissXML">KissXML</a></li>
+<li><a href="https://github.com/KrauseFx/snapshot">snapshot</a></li>
 <li><a href="https://github.com/xujialiang/SOAP-IOS">SOAP-IOS</a></li>
 <li><a href="http://aegeank.com/sketchactive/">SketchActive</a></li>
 <li><a href="https://github.com/TransitApp/SVProgressHUD">SVProgressHUD</a></li>
@@ -104,22 +78,42 @@
 </li>
 <li>Richard Wei</li>
 </ul>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<table>
+<thead>
+<tr>
+<th><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-ALL-portrait.png" alt="Image"></th>
+<th><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-Attending-portrait.png" alt="Image"></th>
+<th><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-Calendar-portrait.png.png" alt="Image"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-CourseTable-portrait.png" alt="Image"></td>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/IMG_5192.PNG" alt="Image"></td>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-Settings-portrait.png" alt="Image"></td>
+</tr>
+<tr>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/IMG_5191.PNG" alt="Image"></td>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-LandingScreen-portrait.png" alt="Image"></td>
+<td><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/en-US-iPhone6-0-Page-portrait.png" alt="Image"></td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/IMG_0295.PNG" alt="Image">
+<img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/IMG_5193.PNG" alt="Image">
+<img src="https://github.com/ljlin/NUAAPlus/raw/master/Screenshots/OSXScreenshot.png" alt="Image"></p>
       </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/ljlin">ljlin</a> can be found on <a href="https://github.com/ljlin/NUAAPlus">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
     </div>
-
+    <footer>
+      <p>Project maintained by <a href="https://github.com/ljlin">ljlin</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
