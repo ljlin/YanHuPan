@@ -7,3 +7,6 @@
 [submodule "SOAP-IOS"]
 	path = SOAP-IOS
 	url = https://github.com/ljlin/SOAP-IOS
+[submodule "AEXML"]
+	path = AEXML
+	url = https://github.com/tadija/AEXML
