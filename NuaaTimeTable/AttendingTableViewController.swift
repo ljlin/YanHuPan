@@ -33,7 +33,7 @@ class AttendingTableViewController: UITableViewController {
             manager.responseSerializer = AFHTTPResponseSerializer()
             manager.GET(baseString, parameters: parameter,
                 success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                    let jsonData = responseObject as NSData
+                    let jsonData = responseObject as! NSData
                     self.analyzeJSONData(jsonData)
                     NSUserDefaults.standardUserDefaults().setObject(jsonData, forKey: "AttendingsJSONData")
                     SVProgressHUD.showSuccessWithStatus("刷新成功")
@@ -72,7 +72,7 @@ class AttendingTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "AttendingCellIdentifier"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as UITableViewCell?
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! UITableViewCell?
         if cell == nil {
             cell =  UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         }

@@ -21,11 +21,11 @@ class ArticlesTableViewController: UITableViewController {
         manager.requestSerializer.timeoutInterval = 1
         manager.GET(baseString, parameters: nil,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                let jsonData = responseObject as NSData
+                let jsonData = responseObject as! NSData
                 let jsonObject: AnyObject? = NSJSONSerialization.JSONObjectWithData( jsonData,
                     options: NSJSONReadingOptions.MutableContainers,
                     error: nil)
-                self.articles = jsonObject as [[String:String]]
+                self.articles = jsonObject as! [[String:String]]
                 //NSUserDefaults.standardUserDefaults().setObject(jsonData, forKey: "AttendingsJSONData")
                 SVProgressHUD.showSuccessWithStatus("载入完成")
                 self.loading = false
@@ -64,7 +64,7 @@ class ArticlesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "ArticlescellIdentifier"
-        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel?.text = self.articles[indexPath.row]["title"]
 
         return cell
@@ -81,8 +81,8 @@ class ArticlesTableViewController: UITableViewController {
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ShowMoreSegue" {
-            let indexPath = sender as NSIndexPath
-            let controller = segue.destinationViewController as PageViewController
+            let indexPath = sender as! NSIndexPath
+            let controller = segue.destinationViewController as! PageViewController
             controller.id = self.articles[indexPath.row]["id"]!
         }
     }

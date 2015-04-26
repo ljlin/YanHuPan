@@ -28,7 +28,7 @@ func <== (to:NSObject, from:[String:AnyObject?]){
 }
 
 protocol LLKVCoding {
-    class var keys : [String] { get }
+    static var keys : [String] { get }
 }
 
 
@@ -47,7 +47,7 @@ extension String {
         }
         result.destroy();
         
-        return String(format: hash)
+        return String(hash) //String(format: hash)
     }
 }
 

@@ -45,7 +45,7 @@ class DedEngine : NSObject {
         var res = []
         self.requestAccessToEKEntityTypeEvent({(_) in
             res = self.eventStore.calendarsForEntityType(EKEntityTypeEvent).filter({
-                ($0 as EKCalendar).source.title == "iCloud"
+                ($0 as! EKCalendar).source.title == "iCloud"
             })
             if res.count == 0 {
                 res = self.eventStore.calendarsForEntityType(EKEntityTypeEvent)
@@ -53,7 +53,7 @@ class DedEngine : NSObject {
             NSLog("finish block")
         })
         NSLog("finish getCal")
-        return res as [EKCalendar]
+        return res as! [EKCalendar]
     }
     func getCourseTableBySettings() -> Bool {
         if let user = userInfo {
@@ -203,11 +203,11 @@ class DedEngine : NSObject {
     func creatCalendarby(title:String) -> EKCalendar? {
         var calendar : EKCalendar? = nil
         let allSources = self.eventStore.sources()
-        let sources = (allSources as [EKSource]).filter {
+        let sources = (allSources as! [EKSource]).filter {
            ($0.title == "iCloud")&&($0.sourceType.value == EKSourceTypeCalDAV.value)
         }
         var localSource : EKSource? = sources.isEmpty ?
-                                        (allSources as [EKSource]).first :
+                                        (allSources as! [EKSource]).first :
                                         sources.first
         calendar = EKCalendar(forEntityType:EKEntityTypeEvent , eventStore:self.eventStore)
         calendar?.title = title;

@@ -46,7 +46,6 @@
 		BF9409A21A18C7E500160BB6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9409A11A18C7E500160BB6 /* libxml2.2.dylib */; };
 		BF9409A71A18C90A00160BB6 /* NuaaDedWebService.xml in Resources */ = {isa = PBXBuildFile; fileRef = BF9409A51A18C90A00160BB6 /* NuaaDedWebService.xml */; };
 		BF9409AD1A18CB7500160BB6 /* DedEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9409AC1A18CB7500160BB6 /* DedEngine.swift */; };
-		BF9409AF1A18CC3100160BB6 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9409AE1A18CC3100160BB6 /* AEXML.swift */; };
 		BF9409B31A18D87300160BB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9409B21A18D87300160BB6 /* LoginViewController.swift */; };
 		BF9BF6201A9A1550002214F8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9BF61F1A9A1550002214F8 /* StoreKit.framework */; };
 		BFB1C8B51A93A228009E8040 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB1C8B01A93A228009E8040 /* SVIndefiniteAnimatedView.m */; };
@@ -57,8 +56,9 @@
 		BFD21CBF1A971C9100DDDFE7 /* DEDUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED17A1A922D900030482C /* DEDUserInfo.swift */; };
 		BFD21CC01A9721E100DDDFE7 /* ToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4600A71A8F4869007C0BC3 /* ToolBox.swift */; };
 		BFD21CCA1A97875200DDDFE7 /* AttendingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD21CC91A97875200DDDFE7 /* AttendingTableViewController.swift */; };
+		BFDFB29B1AED4B8600D8E1A3 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFB29A1AED4B8600D8E1A3 /* AEXML.swift */; };
+		BFDFB29D1AED4D1200D8E1A3 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDFB29C1AED4D1200D8E1A3 /* Async.swift */; };
 		BFF2A0C91A97028C00C092EA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFF2A0C81A97028C00C092EA /* Settings.bundle */; };
-		BFFB073E1A925747008EFE01 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFB073D1A925747008EFE01 /* Async.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,7 +164,6 @@
 		BF9409A11A18C7E500160BB6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		BF9409A51A18C90A00160BB6 /* NuaaDedWebService.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NuaaDedWebService.xml; sourceTree = "<group>"; };
 		BF9409AC1A18CB7500160BB6 /* DedEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DedEngine.swift; sourceTree = "<group>"; };
-		BF9409AE1A18CC3100160BB6 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AEXML.swift; path = NuaaTimeTable/AEXML.swift; sourceTree = "<group>"; };
 		BF9409B21A18D87300160BB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BF9BF61F1A9A1550002214F8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		BFADDBCD1AEBA7D0008DEEB5 /* URLString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLString.h; sourceTree = "<group>"; };
@@ -178,8 +177,9 @@
 		BFB1C8B81A93A245009E8040 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BFD21CBB1A971C3A00DDDFE7 /* UserInfoTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTest.swift; sourceTree = "<group>"; };
 		BFD21CC91A97875200DDDFE7 /* AttendingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendingTableViewController.swift; sourceTree = "<group>"; };
+		BFDFB29A1AED4B8600D8E1A3 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AEXML.swift; path = AEXML/AEXML.swift; sourceTree = "<group>"; };
+		BFDFB29C1AED4D1200D8E1A3 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Async/Async.swift; sourceTree = "<group>"; };
 		BFF2A0C81A97028C00C092EA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		BFFB073D1A925747008EFE01 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Async.swift; path = NuaaTimeTable/Async.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,9 +361,9 @@
 				BFB1C8B81A93A245009E8040 /* QuartzCore.framework */,
 				BFB1C8AE1A93A228009E8040 /* SVProgressHUD */,
 				BFB1C8A51A93A1CE009E8040 /* SVProgressHUD.xcodeproj */,
-				BFFB073D1A925747008EFE01 /* Async.swift */,
+				BFDFB29A1AED4B8600D8E1A3 /* AEXML.swift */,
+				BFDFB29C1AED4D1200D8E1A3 /* Async.swift */,
 				BF4600A71A8F4869007C0BC3 /* ToolBox.swift */,
-				BF9409AE1A18CC3100160BB6 /* AEXML.swift */,
 				BF9409A11A18C7E500160BB6 /* libxml2.2.dylib */,
 				BF85D08F1A97C7DE006B4E08 /* AFNetworking */,
 				BF85D0671A97C498006B4E08 /* SoapUtility */,
@@ -572,7 +572,7 @@
 				BF85D0661A97C48C006B4E08 /* DDXMLNode.m in Sources */,
 				BF4600A81A8F486A007C0BC3 /* ToolBox.swift in Sources */,
 				BF85D0701A97C498006B4E08 /* SoapService.m in Sources */,
-				BF9409AF1A18CC3100160BB6 /* AEXML.swift in Sources */,
+				BFDFB29D1AED4D1200D8E1A3 /* Async.swift in Sources */,
 				BF85D0A81A97C7DE006B4E08 /* AFURLConnectionOperation.m in Sources */,
 				BFD21CCA1A97875200DDDFE7 /* AttendingTableViewController.swift in Sources */,
 				BF85D0631A97C48C006B4E08 /* NSString+DDXML.m in Sources */,
@@ -594,6 +594,7 @@
 				BF9409421A18C4FD00160BB6 /* CourseTableViewController.swift in Sources */,
 				BF9409B31A18D87300160BB6 /* LoginViewController.swift in Sources */,
 				BF9409401A18C4FD00160BB6 /* AppDelegate.swift in Sources */,
+				BFDFB29B1AED4B8600D8E1A3 /* AEXML.swift in Sources */,
 				BF85D0A71A97C7DE006B4E08 /* AFSecurityPolicy.m in Sources */,
 				BF85D0A41A97C7DE006B4E08 /* AFHTTPRequestOperationManager.m in Sources */,
 				BF85D0A51A97C7DE006B4E08 /* AFHTTPSessionManager.m in Sources */,
@@ -602,7 +603,6 @@
 				BF85D0A31A97C7DE006B4E08 /* AFHTTPRequestOperation.m in Sources */,
 				BF9409AD1A18CB7500160BB6 /* DedEngine.swift in Sources */,
 				BF85D0AA1A97C7DE006B4E08 /* AFURLResponseSerialization.m in Sources */,
-				BFFB073E1A925747008EFE01 /* Async.swift in Sources */,
 				BF13E95D1A9876560078EFA3 /* Do-not-upload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

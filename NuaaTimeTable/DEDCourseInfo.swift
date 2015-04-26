@@ -39,9 +39,9 @@ class DEDCourseInfo: NSObject, LLKVCoding {
             self.setValue(XML[key].value,forKeyPath:key)
         }
         for key in DEDCourseInfo.keysForIntProperty {
-            self.setValue(XML[key].value.toInt(),forKeyPath:key)
+            self.setValue(XML[key].value!.toInt(),forKeyPath:key)
         }
-        var weekStringArray : [String] = XML["weeks"].value.componentsSeparatedByString(",")
+        var weekStringArray : [String] = XML["weeks"].value!.componentsSeparatedByString(",")
         self.weeks = weekStringArray.map({$0.toInt()!})
     }
 }

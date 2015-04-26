@@ -18,9 +18,9 @@ class PageViewController: UIViewController {
         manager.responseSerializer = AFHTTPResponseSerializer()
         manager.GET(baseString, parameters: [ "id" : self.id ],
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
-                let htmlData = responseObject as NSData
+                let htmlData = responseObject as! NSData
                 //NSUserDefaults.standardUserDefaults().setObject(jsonData, forKey: "AttendingsJSONData")
-                let HTML = NSString(data: htmlData, encoding: NSUTF8StringEncoding)
+                let HTML = String(NSString(data: htmlData, encoding: NSUTF8StringEncoding)!)
                 self.webView.loadHTMLString(HTML, baseURL: nil)
                 //SVProgressHUD.showSuccessWithStatus("载入完成")
             },
